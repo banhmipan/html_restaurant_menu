@@ -1,0 +1,1 @@
+This was a final project that I did for The Origins I: HTML course on Codedex. It amazes me on how much I have improved in coding since then, and looking at it brings back memories to when I was still starting out! :]
