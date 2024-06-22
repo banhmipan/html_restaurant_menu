@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<title>Viet An's Asian Cuisine</title>
+ 	<style>
+ 		#title {
+ 			background-color: lightgoldenrodyellow;
+ 			background-size: 100 px 50 px;
+ 		}
+
+ 		.nav {
+ 			background-color: lightyellow;
+ 		}
+
+ 		.section-border {
+ 			width: 100%;
+ 			margin: auto;
+ 		}
+
+ 		.partial-border {
+ 			width: 50%;
+ 			margin: auto;
+ 		}
+
+ 		#menu-heading {
+ 			background-color: greenyellow;
+ 			background-size: 50 px 70 px;
+ 		}
+
+ 		#order-form-heading {
+ 			background-color: greenyellow;
+ 			background-size: 50 px 70 px;
+ 		}
+
+ 	</style>
+ </head>
+ <body>
+ 	
+ 	<!-- Front Page -->
+ 	<header>
+ 		<h1 id="title">Viet An's Asian Cuisine</h1>
+ 	<nav>
+ 		<h3 class="nav"><a href="#menu">Menu</a></h3> 
+ 		<h3 class="nav"><a href="#order-form">Ordering</a></h3>
+ 	</nav>
+ 		<img
+ 		id="header-image"
+ 		src="https://offloadmedia.feverup.com/secretphiladelphia.co/wp-content/uploads/2023/04/13052527/bingbing2-1024x682.jpg"
+ 		alt="some random diner image i found online"
+ 		width="750">
+ </header><hr class="section-border"><br>
+
+ <section id="menu"><br>
+ 	<h2 id="menu-heading">Menu</h2>
+  
+ <!-- Egg Fried Rice -->
+ <article>
+ 	<h3>Egg Fried Rice</h3>
+ 	<img
+ 	src="https://www.seriouseats.com/thmb/BJjCEDw9OZe95hpZxmNcD3rJnHo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230529-SEA-EggFriedRice-AmandaSuarez-hero-c8d95fbf69314b318bc279159f582882.jpg"
+ 	alt="egg fried rice"
+ 	width="400">
+ 	<p>
+ 		Bowl of fried rice with scrambled eggs, buttered rice, spring onions, and soy sauce.<br>
+ 		<i>
+ 		<ul>
+ 			<b>Pricing:</b>
+ 			<li>Small: $4.99</li>
+ 			<li>Medium: $6.99</li>
+ 			<li>Large: $8.99</li>
+ 		</ul></i>
+ 	</p> 
+	</article><br><hr class="partial-border">
+
+	<!-- Pho Ga -->
+	<article>
+		<h3>Phở Gà</h3>
+		<img
+		src="https://takestwoeggs.com/wp-content/uploads/2022/11/Pho%CC%9B%CC%89-Ga-Vietnamese-Chicken-Pho-Soup-Takestwoeggs-Final-Photography-sq.jpg"
+		alt="pho ga"
+		width="400">
+		<p>
+			Vietnamese noodle soup made with white rice noodles, fresh chicken thighs, bean sprouts, green onion, cilantro, and thai basil.<br>
+			<i>
+			<ul>
+				<b>Pricing:</b>
+				<li>Small: $6.99</li>
+				<li>Large: $9.99</li>
+			</ul></i>
+		</p>
+	</article><br><hr class="partial-border">
+
+	<!-- Banh Mi Ga -->
+	<article>
+		<h3>Bánh Mì Gà</h3>
+		<img
+		src="https://cdn.jwplayer.com/v2/media/utCJMWB3/poster.jpg"
+		alt="banh mi ga"
+		width="400">
+		<p>
+			Vietnamese sandwich in a hoagie-style roll with tender chicken, cilantro, cucumber, and sriracha. 
+			<i>
+			<ul>
+				<b>Pricing:</b>
+				<li>Small (6"): $5.99</li>
+				<li>Large (12"): $7.99</li>
+			</ul></i>
+		</p>
+	</article><br></section><hr class="section-border">
+
+	<!-- Ordering Form -->
+	<section id="order-form">
+		<form>
+			<form>
+ 
+				<!-- First Section (contact info) -->
+				<h2 id="order-form-heading">Place Your Order:</h2><br>
+				<h3>Contact Info</h3>
+				<label for="name">Name: </label><input type="text" id="name" required><br><br>
+				<label for="address">Address: </label><input type="text" id="address" required><br><br>
+				<label for="email">Email: </label><input type="email" id="email "required><br><br>
+				<label for="phone-number">Phone Number: </label><input type="tel" id="phone-number" required><br><br><br>
+				<h3>What are you ordering? + quantities</h3>
+				Please put it at zero if you're not ordering an item.<br><br>
+ 
+				<!-- Egg Fried Rice -->
+				<label for="egg-fried-rice">Egg Fried Rice: </label><input type="number" min="0" id="egg-fried-rice" required><br>
+				<label for="sml-egg-fried-rice"> Small</label><input type="radio" name="option1" id="sml-egg-fried-rice"><br>
+				<label for="med-egg-fried-rice"> Medium</label><input type="radio" name="option1" id="med-egg-fried-rice"><br>
+				<label for="lar-egg-fried-rice"> Large</label><input type="radio" name="option1" id="lar-egg-fried-rice"><br>
+				<label>Add Chili Oil: $0.50 </label><input type="checkbox"><br><br></input>
+			
+ 
+				<!-- Phở Gà -->
+				<label for="pho-ga">Phở Gà </label><input type="number" min="0" id="pho-ga" required>
+				<br>
+				<label for="sml-pho-ga"> Small</label><input type="radio" name="option2" id="sml-pho-ga"><br>
+				<label for="lar-pho-ga"> Large</label><input type="radio" name="option2" id="lar-pho-ga"><br><br></input>
+			
+ 
+				<!-- Bánh Mì Gà -->
+				<label>Bánh Mì Gà </label><input type="number" min="0" required>
+				<br>
+				<label for="sml-banh-mi-ga"> 6"</label><input type="radio" name="option3" id="sml-banh-mi-ga"><br>
+				<label for="lar-banh-mi-ga"> 12"</label><input type="radio" name="option3" id="lar-banh-mi-ga"><br><br></input>
+			
+
+				<h3>Sides</h3>
+				<label for="miso-soup">Miso Soup: $3.99/each </label><input type="number" min="0" id="miso-soup" required><br><br>
+				<label for="dumplings">Dumplings: $3.99/each </label><input type="number" min="0" id="dumplings" required><br><br><br>
+
+				<!-- Text Area for Special Requests and Quantities -->
+				<h3>Please specify how many of each food size you ordered here and any special requests for the food items.</h3>
+				<textarea rows="7" cols="32" placeholder="Insert Specifications Here" required></textarea><br><br>
+				<input type="submit" value="Go To Checkout"><br><br><hr class="section-border">
+				<p>Made with love by Brendon Tran (@breadstick07) :]</p>
+			</form>
+		</form>
+	</section>
+	</body>
+</html>
